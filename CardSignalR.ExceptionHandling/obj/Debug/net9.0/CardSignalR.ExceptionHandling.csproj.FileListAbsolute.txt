@@ -46,3 +46,4 @@ C:\Users\User\RiderProjects\CardSignalR\CardSignalR.ExceptionHandling\obj\Debug\
 C:\Users\User\RiderProjects\CardSignalR\CardSignalR.ExceptionHandling\obj\Debug\net9.0\CardSignalR.ExceptionHandling.pdb
 C:\Users\User\RiderProjects\CardSignalR\CardSignalR.ExceptionHandling\obj\Debug\net9.0\CardSignalR.ExceptionHandling.genruntimeconfig.cache
 C:\Users\User\RiderProjects\CardSignalR\CardSignalR.ExceptionHandling\obj\Debug\net9.0\ref\CardSignalR.ExceptionHandling.dll
+C:\Users\User\RiderProjects\CardSignalR\CardSignalR.ExceptionHandling\obj\Debug\net9.0\CardSignalR.ExceptionHandling.sourcelink.json

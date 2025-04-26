@@ -1,8 +1,8 @@
-using CardSignalR.Service.Models;
+using CardSignalR.Service.Dto;
 
 namespace CardSignalR.Service.Interfaces;
 
 public interface IUserService
 {
-    public void AddUser(UserModel user );
+    public void AddUser(UserDto user );
 }

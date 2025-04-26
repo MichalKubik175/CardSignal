@@ -13,6 +13,9 @@ public class CardLink
     public string Name { get; set; }
     
     [Required]
+    public string Link { get; set; }
+    
+    [Required]
     public DateTime ExpirationDate { get; set; }
     
     [Required]

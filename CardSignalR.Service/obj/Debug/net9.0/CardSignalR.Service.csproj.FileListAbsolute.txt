@@ -63,3 +63,4 @@ C:\Users\User\RiderProjects\CardSignalR\CardSignalR.Service\obj\Debug\net9.0\ref
 C:\Users\User\RiderProjects\CardSignalR\CardSignalR.Service\obj\Debug\net9.0\CardSignalR.Service.pdb
 C:\Users\User\RiderProjects\CardSignalR\CardSignalR.Service\obj\Debug\net9.0\CardSignalR.Service.genruntimeconfig.cache
 C:\Users\User\RiderProjects\CardSignalR\CardSignalR.Service\obj\Debug\net9.0\ref\CardSignalR.Service.dll
+C:\Users\User\RiderProjects\CardSignalR\CardSignalR.Service\obj\Debug\net9.0\CardSignalR.Service.sourcelink.json

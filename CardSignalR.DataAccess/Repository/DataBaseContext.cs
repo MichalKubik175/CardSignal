@@ -11,6 +11,6 @@ public class DataBaseContext : DbContext
     }
     
     public DbSet<User> Users { get; set; }
-    public DbSet<Group> Groups { get; set; }
+    public DbSet<Office> Offices { get; set; }
     public DbSet<CardLink> CardLinks { get; set; }
 }

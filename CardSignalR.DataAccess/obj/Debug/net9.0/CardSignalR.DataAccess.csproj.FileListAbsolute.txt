@@ -141,3 +141,4 @@ C:\Users\User\RiderProjects\CardSignalR\CardSignalR.DataAccess\obj\Debug\net9.0\
 C:\Users\User\RiderProjects\CardSignalR\CardSignalR.DataAccess\obj\Debug\net9.0\CardSignalR.DataAccess.pdb
 C:\Users\User\RiderProjects\CardSignalR\CardSignalR.DataAccess\obj\Debug\net9.0\CardSignalR.DataAccess.genruntimeconfig.cache
 C:\Users\User\RiderProjects\CardSignalR\CardSignalR.DataAccess\obj\Debug\net9.0\ref\CardSignalR.DataAccess.dll
+C:\Users\User\RiderProjects\CardSignalR\CardSignalR.DataAccess\obj\Debug\net9.0\CardSignalR.DataAccess.sourcelink.json

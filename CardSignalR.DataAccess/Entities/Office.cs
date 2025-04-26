@@ -4,7 +4,7 @@ using CardSignalR.DataAccess.Enum;
 
 namespace CardSignalR.DataAccess.Entities;
 
-public class Group
+public class Office
 {
     [Key]
     [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
@@ -12,7 +12,4 @@ public class Group
     
     [Required]
     public string Name { get; set; }
-    
-    [Required]
-    public Geo Geo { get; set; }
 }

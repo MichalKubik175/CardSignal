@@ -1,5 +1,6 @@
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
+using CardSignalR.DataAccess.Enum;
 
 namespace CardSignalR.DataAccess.Entities;
 
@@ -17,11 +18,16 @@ public class User
     
     [Required]
     public byte[] PasswordHash { get; set; }
-    
-    [Required]
+
+    [Required] 
     public byte[] PasswordSalt { get; set; }
-    
-    public Guid GroupId { get; set; }
+
+    [Required]
+    public Geo Geo { get; set; } = Geo.None;
+
+    [Required]
+    [ForeignKey("Office")] 
+    public Guid OfficeId { get; set; }
     
     public virtual ICollection<CardLink> CardLinks { get; set; }
 }

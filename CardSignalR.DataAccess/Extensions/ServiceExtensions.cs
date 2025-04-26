@@ -19,6 +19,6 @@ public static class ServiceExtensions
         
         services.AddScoped<IUserRepository, UserRepository>();
         services.AddScoped<ICardLinkRepository, CardLinkRepository>();
-        services.AddScoped<IGroupRepository, GroupRepository>();
+        services.AddScoped<IOfficeRepository, OfficeRepository>();
     }
 }
