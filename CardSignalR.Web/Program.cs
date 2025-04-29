@@ -11,6 +11,7 @@ builder.Services.AddRazorComponents()
 
 builder.Services.ConfigureMySqlContext(builder.Configuration);
 builder.Services.AddScoped<IUserService, UserService>();
+builder.Services.AddScoped<ICardLinkService, CardLinkService>();
 
 var app = builder.Build();
 

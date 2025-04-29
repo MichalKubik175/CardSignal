@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "EgaYa3baeJc=",
+  "dgSpecHash": "6Cb/xQc1gDM=",
   "success": true,
   "projectFilePath": "C:\\Users\\User\\RiderProjects\\CardSignalR\\CardSignalR.DataAccess\\CardSignalR.DataAccess.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\User\\.nuget\\packages\\automapper\\14.0.0\\automapper.14.0.0.nupkg.sha512",
     "C:\\Users\\User\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\User\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\7.0.0\\microsoft.bcl.asyncinterfaces.7.0.0.nupkg.sha512",
     "C:\\Users\\User\\.nuget\\packages\\microsoft.build.framework\\17.8.3\\microsoft.build.framework.17.8.3.nupkg.sha512",

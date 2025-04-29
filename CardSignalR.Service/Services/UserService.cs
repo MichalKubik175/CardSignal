@@ -18,17 +18,17 @@ public class UserService : IUserService
         throw new NotImplementedException();
     }
 
-    public Task<User> UpdateUser(UserDto user)
+    public Task<UserDto> UpdateUser(UserDto user)
     {
         throw new NotImplementedException();
     }
 
-    public Task<IEnumerable<User>> GetAllUsers()
+    public Task<IEnumerable<UserDto>> GetAllUsers()
     {
         throw new NotImplementedException();
     }
 
-    public Task<User> AddUser(UserDto user)
+    public Task<UserDto> AddUser(UserDto user)
     {
         throw new NotImplementedException();
     }

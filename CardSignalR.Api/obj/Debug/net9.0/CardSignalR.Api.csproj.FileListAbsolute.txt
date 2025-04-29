@@ -81,3 +81,9 @@ C:\Users\User\RiderProjects\CardSignalR\CardSignalR.Api\obj\Debug\net9.0\CardSig
 C:\Users\User\RiderProjects\CardSignalR\CardSignalR.Api\obj\Debug\net9.0\CardSignalR.Api.genruntimeconfig.cache
 C:\Users\User\RiderProjects\CardSignalR\CardSignalR.Api\obj\Debug\net9.0\ref\CardSignalR.Api.dll
 C:\Users\User\RiderProjects\CardSignalR\CardSignalR.Api\obj\Debug\net9.0\CardSignalR.Api.sourcelink.json
+C:\Users\User\RiderProjects\CardSignalR\CardSignalR.Api\bin\Debug\net9.0\CardSignalR.Service.deps.json
+C:\Users\User\RiderProjects\CardSignalR\CardSignalR.Api\bin\Debug\net9.0\CardSignalR.Service.runtimeconfig.json
+C:\Users\User\RiderProjects\CardSignalR\CardSignalR.Api\bin\Debug\net9.0\CardSignalR.Service.exe
+C:\Users\User\RiderProjects\CardSignalR\CardSignalR.Api\bin\Debug\net9.0\AutoMapper.dll
+C:\Users\User\RiderProjects\CardSignalR\CardSignalR.Api\bin\Debug\net9.0\CardSignalR.Service.dll
+C:\Users\User\RiderProjects\CardSignalR\CardSignalR.Api\bin\Debug\net9.0\CardSignalR.Service.pdb

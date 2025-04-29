@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("CardSignalR.Web")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e8b5cb4fd36e426438df074a0e69867478433cdb")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+4965bb96f26849a098717cfdce7d5ee587221230")]
 [assembly: System.Reflection.AssemblyProductAttribute("CardSignalR.Web")]
 [assembly: System.Reflection.AssemblyTitleAttribute("CardSignalR.Web")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

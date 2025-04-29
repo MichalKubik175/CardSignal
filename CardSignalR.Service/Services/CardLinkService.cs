@@ -1,3 +1,4 @@
+using AutoMapper;
 using CardSignalR.DataAccess.Entities;
 using CardSignalR.DataAccess.Interfaces;
 using CardSignalR.Service.Dto;
@@ -8,29 +9,42 @@ namespace CardSignalR.Service.Services;
 public class CardLinkService : ICardLinkService
 {
     private readonly ICardLinkRepository _cardLinkRepository;
+    private readonly IMapper _mapper;
 
-    public CardLinkService(ICardLinkRepository cardLinkRepository)
+    public CardLinkService(ICardLinkRepository cardLinkRepository, IMapper mapper)
     {
         _cardLinkRepository = cardLinkRepository;
+        _mapper = mapper;
     }
 
-    public Task<CardLink> GetCardLink(Guid cardLinkDtoId)
+    public async Task<CardLinkDto> GetCardLink(string cardLinkName)
     {
-        throw new NotImplementedException();
+        CardLinkDto cardLinkDto = new CardLinkDto();
+        CardLink cardLink = await _cardLinkRepository.GetCardLinkAsync(cardLinkName);
+        
+        return _mapper.Map(cardLink, cardLinkDto);
     }
 
-    public Task<IEnumerable<CardLink>> GetCardLinks()
+    public async Task<IEnumerable<CardLinkDto>> GetCardLinks()
     {
-        throw new NotImplementedException();
+        IEnumerable<CardLinkDto> cardLinkDto = new List<CardLinkDto>();
+        IEnumerable<CardLink> cardLink = await _cardLinkRepository.GetAllCardLinksAsync();
+        
+        return _mapper.Map<IEnumerable<CardLinkDto>>(cardLink);
     }
 
-    public Task<CardLink> UpdateCardLink(CardLinkDto cardLinkDto)
+    public async Task<CardLinkDto> UpdateCardLink(CardLinkDto cardLinkDto)
     {
-        throw new NotImplementedException();
+        CardLink cardLink = _mapper.Map<CardLink>(cardLinkDto);
+        CardLink mappedCardLink = await _cardLinkRepository.UpdateCardLinkAsync(cardLink);
+        
+        return _mapper.Map<CardLinkDto>(mappedCardLink);
     }
 
-    public void DeleteCardLink(CardLinkDto cardLinkDto)
+    public async void DeleteCardLink(CardLinkDto cardLinkDto)
     {
-        throw new NotImplementedException();
+        CardLink cardLink = _mapper.Map<CardLink>(cardLinkDto);
+        
+        await _cardLinkRepository.DeleteCardLinkAsync(cardLink);
     }
 }

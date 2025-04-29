@@ -5,11 +5,11 @@ namespace CardSignalR.Service.Interfaces;
 
 public interface ICardLinkService
 {
-    public Task<CardLink> GetCardLink(Guid cardLinkDtoId);
+    public Task<CardLinkDto> GetCardLink(string cardLinkName);
     
-    public Task<IEnumerable<CardLink>> GetCardLinks();
+    public Task<IEnumerable<CardLinkDto>> GetCardLinks();
     
-    public Task<CardLink> UpdateCardLink(CardLinkDto cardLinkDto);
+    public Task<CardLinkDto> UpdateCardLink(CardLinkDto cardLinkDto);
     
     public void DeleteCardLink(CardLinkDto cardLinkDto);
 }

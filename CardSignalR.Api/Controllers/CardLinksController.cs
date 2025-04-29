@@ -1,7 +1,7 @@
 using CardSignalR.DataAccess.Entities;
-using CardSignalR.DataAccess.Repository;
+using CardSignalR.Service.Dto;
+using CardSignalR.Service.Interfaces;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore;
 
 namespace CardSignalR.Api.Controllers;
 
@@ -10,18 +10,18 @@ namespace CardSignalR.Api.Controllers;
 [Produces("application/json")]
 public class CardLinksController : Controller
 {
-    private readonly DataBaseContext _context;
+    private readonly ICardLinkService _cardLinkService;
 
-    public CardLinksController(DataBaseContext context)
+    public CardLinksController(ICardLinkService cardLinkService)
     {
-        _context = context;
+        _cardLinkService = cardLinkService;
     }
     
     [HttpGet]
     [ProducesResponseType(StatusCodes.Status200OK, Type = typeof(IEnumerable<CardLink>))]
     public async Task<IActionResult> GetAll()
     {
-        var cardLinks = await _context.CardLinks.ToListAsync();
+        var cardLinks = await _cardLinkService.GetCardLinks();
         return Ok(cardLinks);
     }
     
@@ -29,7 +29,15 @@ public class CardLinksController : Controller
     [ProducesResponseType(StatusCodes.Status200OK, Type = typeof(IEnumerable<CardLink>))]
     public async Task<IActionResult> AddCardLink()
     {
-        var cardLinks = await _context.CardLinks.ToListAsync();
+        var cardLinks = await _cardLinkService.GetCardLinks();
+        return Ok(cardLinks);
+    }
+    
+    [HttpPost("updateCardLink")]
+    [ProducesResponseType(StatusCodes.Status200OK, Type = typeof(IEnumerable<CardLink>))]
+    public async Task<IActionResult> UpdateCardLink([FromBody] CardLinkDto cardLinkDto)
+    {
+        var cardLinks = await _cardLinkService.UpdateCardLink(cardLinkDto);
         return Ok(cardLinks);
     }
 }

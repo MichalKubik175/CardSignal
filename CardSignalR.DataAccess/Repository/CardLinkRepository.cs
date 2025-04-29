@@ -1,3 +1,4 @@
+using AutoMapper;
 using CardSignalR.DataAccess.Entities;
 using CardSignalR.DataAccess.Interfaces;
 using CardSignalR.Exception.Exceptions;
@@ -8,11 +9,25 @@ namespace CardSignalR.DataAccess.Repository;
 public class CardLinkRepository : ICardLinkRepository
 {
     private readonly DataBaseContext _context;
-    public CardLinkRepository(DataBaseContext dataBaseContext)
+    private readonly IMapper _mapper;
+    public CardLinkRepository(DataBaseContext dataBaseContext, IMapper mapper)
     {
         _context = dataBaseContext;
+        _mapper = mapper;
     }
-    
+
+    public async Task<CardLink> UpdateCardLinkAsync(CardLink cardLink)
+    {
+        CardLink contextCardLink = await _context.CardLinks
+            .Where(contextCardLink => contextCardLink.Id == cardLink.Id)
+            .FirstOrDefaultAsync() ?? throw new CardLinkNotFoundException("Card");
+
+        CardLink mappedCardLink = _mapper.Map(cardLink, contextCardLink);
+        await _context.SaveChangesAsync();
+        
+        return mappedCardLink;
+    }
+
     public async Task<CardLink> CreateCardLinkAsync(CardLink cardLink)
     {
         if (await CardLinkExistsAsync(cardLink.Name))
@@ -27,7 +42,7 @@ public class CardLinkRepository : ICardLinkRepository
     public async Task<CardLink> GetCardLinkAsync(string cardLinkName)
     {
         return await _context.CardLinks.FirstOrDefaultAsync(x => x.Name == cardLinkName) 
-               ?? throw new CardLinkNotFoundException("CardLink is not exist!");
+               ?? throw new CardLinkNotFoundException($"CardLink with provided {cardLinkName} name is not found!");
     }
 
     public async Task<IEnumerable<CardLink>> GetAllCardLinksAsync()
@@ -45,8 +60,13 @@ public class CardLinkRepository : ICardLinkRepository
         }
     }
     
-    public async Task<bool> CardLinkExistsAsync(string cardLinkName)
+    private async Task<bool> CardLinkExistsAsync(string cardLinkName)
     {
         return await _context.CardLinks.AnyAsync(x => x.Name == cardLinkName);
+    }
+    
+    private async Task<bool> CardLinkExistsAsync(Guid cardLinkId)
+    {
+        return await _context.CardLinks.AnyAsync(x => x.Id == cardLinkId);
     }
 }

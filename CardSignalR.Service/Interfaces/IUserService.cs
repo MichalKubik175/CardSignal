@@ -6,8 +6,8 @@ namespace CardSignalR.Service.Interfaces;
 
 public interface IUserService
 {
-    public Task<User> AddUser(UserDto user );
+    public Task<UserDto> AddUser(UserDto user );
     public void DeleteUser(UserDto user);
-    public Task<User> UpdateUser(UserDto user);
-    public Task<IEnumerable<User>> GetAllUsers();
+    public Task<UserDto> UpdateUser(UserDto user);
+    public Task<IEnumerable<UserDto>> GetAllUsers();
 }

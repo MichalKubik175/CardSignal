@@ -5,11 +5,11 @@ namespace CardSignalR.Service.Interfaces;
 
 public interface IOfficeService
 {
-    public Task<Office> GetOffice(Guid officeDtoId);
+    public Task<OfficeDto> GetOffice(Guid officeDtoId);
     
-    public Task<IEnumerable<Office>> GetOffices();
+    public Task<IEnumerable<OfficeDto>> GetOffices();
     
-    public Task<Office> UpdateOffice(OfficeDto office);
+    public Task<OfficeDto> UpdateOffice(OfficeDto office);
     
     public void DeleteOffice(OfficeDto office);
 }

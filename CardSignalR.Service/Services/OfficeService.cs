@@ -14,17 +14,17 @@ public class OfficeService : IOfficeService
         _officeRepository = officeRepository;
     }
 
-    public Task<Office> GetOffice(Guid officeDtoId)
+    public Task<OfficeDto> GetOffice(Guid officeDtoId)
     {
         throw new NotImplementedException();
     }
 
-    public Task<IEnumerable<Office>> GetOffices()
+    public Task<IEnumerable<OfficeDto>> GetOffices()
     {
         throw new NotImplementedException();
     }
 
-    public Task<Office> UpdateOffice(OfficeDto office)
+    public Task<OfficeDto> UpdateOffice(OfficeDto office)
     {
         throw new NotImplementedException();
     }

@@ -64,3 +64,4 @@ C:\Users\User\RiderProjects\CardSignalR\CardSignalR.Service\obj\Debug\net9.0\Car
 C:\Users\User\RiderProjects\CardSignalR\CardSignalR.Service\obj\Debug\net9.0\CardSignalR.Service.genruntimeconfig.cache
 C:\Users\User\RiderProjects\CardSignalR\CardSignalR.Service\obj\Debug\net9.0\ref\CardSignalR.Service.dll
 C:\Users\User\RiderProjects\CardSignalR\CardSignalR.Service\obj\Debug\net9.0\CardSignalR.Service.sourcelink.json
+C:\Users\User\RiderProjects\CardSignalR\CardSignalR.Service\bin\Debug\net9.0\AutoMapper.dll
