@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("CardSignalR.ExceptionHandling")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3aa609cbb38d9f58284e5c24cee6142773f14ddc")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e8b5cb4fd36e426438df074a0e69867478433cdb")]
 [assembly: System.Reflection.AssemblyProductAttribute("CardSignalR.ExceptionHandling")]
 [assembly: System.Reflection.AssemblyTitleAttribute("CardSignalR.ExceptionHandling")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -24,4 +24,12 @@ public class CardLinksController : Controller
         var cardLinks = await _context.CardLinks.ToListAsync();
         return Ok(cardLinks);
     }
+    
+    [HttpPost]
+    [ProducesResponseType(StatusCodes.Status200OK, Type = typeof(IEnumerable<CardLink>))]
+    public async Task<IActionResult> AddCardLink()
+    {
+        var cardLinks = await _context.CardLinks.ToListAsync();
+        return Ok(cardLinks);
+    }
 }
