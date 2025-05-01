@@ -1,3 +1,4 @@
+using AutoMapper;
 using CardSignalR.DataAccess.Entities;
 using CardSignalR.DataAccess.Interface;
 using CardSignalR.Service.Interfaces;
@@ -8,10 +9,12 @@ namespace CardSignalR.Service.Services;
 public class UserService : IUserService
 {
     private readonly IUserRepository _userRepository;
+    private readonly IMapper _mapper;
 
-    public UserService(IUserRepository userRepository)
+    public UserService(IUserRepository userRepository, IMapper mapper)
     {
         _userRepository = userRepository;
+        _mapper = mapper;
     }
     public void DeleteUser(UserDto user)
     {
@@ -23,13 +26,17 @@ public class UserService : IUserService
         throw new NotImplementedException();
     }
 
-    public Task<IEnumerable<UserDto>> GetAllUsers()
+    public async Task<IEnumerable<UserDto>> GetAllUsers()
     {
-        throw new NotImplementedException();
+        IEnumerable<User> users = await _userRepository.GetAllUsers();
+        return _mapper.Map<IEnumerable<UserDto>>(users);
     }
 
-    public Task<UserDto> AddUser(UserDto user)
+    public async Task<UserDto> CreateUser(UserDto userDto)
     {
-        throw new NotImplementedException();
+        User user = _mapper.Map<User>(userDto);
+        user = await _userRepository.CreateUserAsync(user, userDto.Password);
+        
+        return _mapper.Map<UserDto>(user);
     }
 }

@@ -33,7 +33,16 @@ public class CardLinksController : Controller
         return Ok(cardLinks);
     }
     
-    [HttpPost("updateCardLink")]
+    [HttpDelete]
+    [ProducesResponseType(StatusCodes.Status200OK, Type = typeof(IEnumerable<CardLink>))]
+    public async Task<IActionResult> DeleteCardLink([FromBody] CardLinkDto cardLinkDto)
+    {
+        await _cardLinkService.DeleteCardLink(cardLinkDto);
+        return Ok();
+    }
+    
+    
+    [HttpPut("updateCardLink")]
     [ProducesResponseType(StatusCodes.Status200OK, Type = typeof(IEnumerable<CardLink>))]
     public async Task<IActionResult> UpdateCardLink([FromBody] CardLinkDto cardLinkDto)
     {

@@ -1,11 +1,24 @@
 using System.Reflection;
+using CardSignalR.DataAccess.Interface;
+using CardSignalR.DataAccess.Interfaces;
 using CardSignalR.DataAccess.Repository;
+using CardSignalR.Service.Interfaces;
+using CardSignalR.Service.Mapping;
+using CardSignalR.Service.Services;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.OpenApi.Models;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container
+builder.Services.AddScoped<IUserService, UserService>();
+builder.Services.AddScoped<ICardLinkService, CardLinkService>();
+builder.Services.AddScoped<IUserRepository, UserRepository>();
+builder.Services.AddScoped<ICardLinkRepository, CardLinkRepository>();
+
+builder.Services.AddAutoMapper(typeof(CardLinkProfile).Assembly);
+builder.Services.AddAutoMapper(typeof(UserProfile).Assembly);
+builder.Services.AddAutoMapper(typeof(OfficeProfile).Assembly);
 builder.Services.AddControllers();
 builder.Services.AddDbContext<DataBaseContext>(options =>
     options.UseMySql(

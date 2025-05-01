@@ -14,6 +14,10 @@ public class UserDto
     public string Surname { get; set; }
     
     [Required]
+    [StringLength(32)]
+    public string Password { get; set; }
+    
+    [Required]
     public Geo Geo { get; set; } = Geo.None;
     
     public Guid OfficeId { get; set; }

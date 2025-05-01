@@ -11,5 +11,5 @@ public interface ICardLinkService
     
     public Task<CardLinkDto> UpdateCardLink(CardLinkDto cardLinkDto);
     
-    public void DeleteCardLink(CardLinkDto cardLinkDto);
+    public Task DeleteCardLink(CardLinkDto cardLinkDto);
 }

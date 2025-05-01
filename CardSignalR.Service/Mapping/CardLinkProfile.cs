@@ -8,6 +8,6 @@ public class CardLinkProfile : Profile
 {
     public CardLinkProfile()
     {
-        CreateMap<CardLink, CardLinkDto>().ReverseMap();;
+        CreateMap<CardLink, CardLinkDto>().ReverseMap();
     }
 }

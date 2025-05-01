@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("CardSignalR.Service")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+4965bb96f26849a098717cfdce7d5ee587221230")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8295416a7e365bd654d5bc4d936776f40694ebb0")]
 [assembly: System.Reflection.AssemblyProductAttribute("CardSignalR.Service")]
 [assembly: System.Reflection.AssemblyTitleAttribute("CardSignalR.Service")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

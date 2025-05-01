@@ -20,12 +20,16 @@ public class CardLinkRepository : ICardLinkRepository
     {
         CardLink contextCardLink = await _context.CardLinks
             .Where(contextCardLink => contextCardLink.Id == cardLink.Id)
-            .FirstOrDefaultAsync() ?? throw new CardLinkNotFoundException("Card");
-
-        CardLink mappedCardLink = _mapper.Map(cardLink, contextCardLink);
+            .FirstOrDefaultAsync() ?? throw new CardLinkNotFoundException($"Card with provided id: {cardLink.Id} is not found!");
+        
+        _context.Entry(contextCardLink).State = EntityState.Detached;
+        contextCardLink = _mapper.Map(cardLink, contextCardLink);
+        
+        _context.Entry(contextCardLink).State = EntityState.Modified;
+        
         await _context.SaveChangesAsync();
         
-        return mappedCardLink;
+        return contextCardLink;
     }
 
     public async Task<CardLink> CreateCardLinkAsync(CardLink cardLink)

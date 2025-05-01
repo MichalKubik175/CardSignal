@@ -46,6 +46,11 @@ public class UserRepository : IUserRepository
     {
         return await _context.Users.FindAsync(id) ?? throw new UserNotFoundException("User is not exist!");
     }
+    
+    public async Task<IEnumerable<User>> GetAllUsers()
+    {
+        return await _context.Users.ToListAsync();
+    }
 
     public async Task<bool> UserExistsAsync(string name, string surname)
     {

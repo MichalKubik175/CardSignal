@@ -41,7 +41,7 @@ public class CardLinkService : ICardLinkService
         return _mapper.Map<CardLinkDto>(mappedCardLink);
     }
 
-    public async void DeleteCardLink(CardLinkDto cardLinkDto)
+    public async Task DeleteCardLink(CardLinkDto cardLinkDto)
     {
         CardLink cardLink = _mapper.Map<CardLink>(cardLinkDto);
         
