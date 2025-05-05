@@ -26,7 +26,9 @@ public class OfficeRepository : IOfficeRepository
 
     public async Task<List<Office>> GetAllOfficesAsync()
     {
-        return await _context.Offices.AsNoTracking().ToListAsync();
+        return await _context.Offices
+            .AsNoTracking()
+            .ToListAsync();
     }
 
     public async Task<Office> GetOfficeAsync(string officeName)

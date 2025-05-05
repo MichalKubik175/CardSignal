@@ -16,4 +16,19 @@ public class CardController : Controller
         _cardService = cardService;
     }
     
+    [HttpGet]
+    [ProducesResponseType(typeof(List<CardDto>),StatusCodes.Status200OK)]
+    public async Task<IActionResult> GetAll()
+    {
+        var cards = await _cardService.GetAllCards();
+        return Ok(cards);
+    }
+    
+    [HttpPost]
+    [ProducesResponseType(typeof(List<CardDto>),StatusCodes.Status200OK)]
+    public async Task<IActionResult> AddCard(CardDto cardDto)
+    {
+        var card = await _cardService.AddCard(cardDto);
+        return Ok(card);
+    }
 }

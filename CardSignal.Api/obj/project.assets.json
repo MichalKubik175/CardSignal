@@ -4151,11 +4151,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\User\\Desktop\\CardSignal\\CardSignal.Api\\CardSignal.Api.csproj",
+      "projectUniqueName": "C:\\Users\\User\\RiderProjects\\CardSignalR\\CardSignal.Api\\CardSignal.Api.csproj",
       "projectName": "CardSignal.Api",
-      "projectPath": "C:\\Users\\User\\Desktop\\CardSignal\\CardSignal.Api\\CardSignal.Api.csproj",
+      "projectPath": "C:\\Users\\User\\RiderProjects\\CardSignalR\\CardSignal.Api\\CardSignal.Api.csproj",
       "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\User\\Desktop\\CardSignal\\CardSignal.Api\\obj\\",
+      "outputPath": "C:\\Users\\User\\RiderProjects\\CardSignalR\\CardSignal.Api\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -4170,11 +4170,11 @@
         "net9.0": {
           "targetAlias": "net9.0",
           "projectReferences": {
-            "C:\\Users\\User\\Desktop\\CardSignal\\CardSignal.Application\\CardSignal.Application.csproj": {
-              "projectPath": "C:\\Users\\User\\Desktop\\CardSignal\\CardSignal.Application\\CardSignal.Application.csproj"
+            "C:\\Users\\User\\RiderProjects\\CardSignalR\\CardSignal.Application\\CardSignal.Application.csproj": {
+              "projectPath": "C:\\Users\\User\\RiderProjects\\CardSignalR\\CardSignal.Application\\CardSignal.Application.csproj"
             },
-            "C:\\Users\\User\\Desktop\\CardSignal\\CardSignal.DataAccess\\CardSignal.DataAccess.csproj": {
-              "projectPath": "C:\\Users\\User\\Desktop\\CardSignal\\CardSignal.DataAccess\\CardSignal.DataAccess.csproj"
+            "C:\\Users\\User\\RiderProjects\\CardSignalR\\CardSignal.DataAccess\\CardSignal.DataAccess.csproj": {
+              "projectPath": "C:\\Users\\User\\RiderProjects\\CardSignalR\\CardSignal.DataAccess\\CardSignal.DataAccess.csproj"
             }
           }
         }
