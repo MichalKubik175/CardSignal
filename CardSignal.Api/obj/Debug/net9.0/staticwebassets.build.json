@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Hash": "8wULN2nKWRNstKYHHxAuY95jtYuzCBpCSblNtBIVRzE=",
+  "Source": "CardSignal.Api",
+  "BasePath": "_content/CardSignal.Api",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}
