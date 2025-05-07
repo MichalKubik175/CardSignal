@@ -55,6 +55,10 @@
               "target": "Package",
               "version": "[14.0.0, )"
             },
+            "Kirpichyov.FriendlyJwt": {
+              "target": "Package",
+              "version": "[1.0.8, )"
+            },
             "Microsoft.Extensions.Configuration.Abstractions": {
               "target": "Package",
               "version": "[9.0.4, )"

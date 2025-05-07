@@ -2,10 +2,12 @@ using AutoMapper;
 using CardSignal.Application.Dto;
 using CardSignal.Application.Interfaces;
 using CardSignal.Core.Entities;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace CardSignal.Api.Controllers;
 
+[Authorize(Roles = "User, Admin")]
 [ApiController]
 [Route("api/card-links")]
 [Produces("application/json")]

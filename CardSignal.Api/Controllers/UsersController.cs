@@ -1,6 +1,7 @@
 using CardSignal.Application.Dto;
 using CardSignal.Application.Interfaces;
 using CardSignal.Core.Entities;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace CardSignal.Api.Controllers;
@@ -17,6 +18,7 @@ public class UsersController : Controller
         _userService = userService;
     }
     
+    [Authorize(Roles = "Admin")]
     [HttpGet]
     [ProducesResponseType(typeof(List<User>),StatusCodes.Status200OK)]
     public async Task<IActionResult> GetAll()

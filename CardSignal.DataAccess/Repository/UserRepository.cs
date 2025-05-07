@@ -31,6 +31,14 @@ public class UserRepository : IUserRepository
         throw new NotImplementedException();
     }
 
+    public async Task<User> GetUserByEmailAsync(string email)
+    {
+        return await _context.Users
+            .AsNoTracking()
+            .FirstOrDefaultAsync(x => x.Email == email)
+               ?? throw new UserNotFoundException($"User with provided {email} is not exist!");
+    }
+
     public Task<bool> UserExistsAsync(string username)
     {
         throw new NotImplementedException();
@@ -43,7 +51,9 @@ public class UserRepository : IUserRepository
     
     public async Task<List<User>> GetAllUsers()
     {
-        return await _context.Users.AsNoTracking().ToListAsync();
+        return await _context.Users
+            .AsNoTracking()
+            .ToListAsync();
     }
 
     public async Task<bool> UserExistsAsync(string name, string surname)
@@ -58,7 +68,7 @@ public class UserRepository : IUserRepository
         passwordHash = hmac.ComputeHash(Encoding.UTF8.GetBytes(password));
     }
     
-    private static bool VerifyPasswordHash(string password, byte[] storedHash, byte[] storedSalt)
+    public bool VerifyPasswordHash(string password, byte[] storedHash, byte[] storedSalt)
     {
         using var hmac = new HMACSHA512(storedSalt);
         var computedHash = hmac.ComputeHash(Encoding.UTF8.GetBytes(password));

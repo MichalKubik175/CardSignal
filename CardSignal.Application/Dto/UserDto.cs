@@ -14,8 +14,15 @@ public class UserDto
     public string Surname { get; set; }
     
     [Required]
+    [StringLength(100)]
+    public string Email { get; set; }
+    
+    [Required]
     [StringLength(32)]
     public string Password { get; set; }
+    
+    [Required]
+    public Role Role { get; set; }
     
     [Required]
     public Geo Geo { get; set; } = Geo.None;

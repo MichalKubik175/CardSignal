@@ -1,5 +1,6 @@
 using CardSignal.Application.Dto;
 using CardSignal.Application.Interfaces;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace CardSignal.Api.Controllers;
@@ -16,6 +17,7 @@ public class OfficeController : Controller
         _officeService = officeService;
     }
     
+    [Authorize(Roles = "User, Admin")]
     [HttpGet("{name}")]
     [ProducesResponseType(typeof(List<OfficeDto>),StatusCodes.Status200OK)]
     public async Task<IActionResult> GetOffice([FromRoute] string name)
@@ -24,6 +26,7 @@ public class OfficeController : Controller
         return Ok(cardLink);
     }
     
+    [Authorize(Roles = "Admin")]
     [HttpPost]
     [ProducesResponseType(typeof(List<OfficeDto>),StatusCodes.Status200OK)]
     public async Task<IActionResult> AddOffice([FromBody] OfficeDto officeDto)

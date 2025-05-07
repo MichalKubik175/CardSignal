@@ -17,10 +17,16 @@ public class User
     public string Surname { get; set; }
     
     [Required]
+    public string Email { get; set; }
+    
+    [Required]
     public byte[] PasswordHash { get; set; }
 
     [Required] 
     public byte[] PasswordSalt { get; set; }
+    
+    [Required]
+    public Role Role { get; set; }
 
     [Required]
     public Geo Geo { get; set; } = Geo.None;

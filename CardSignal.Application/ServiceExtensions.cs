@@ -13,5 +13,6 @@ public static class ServiceExtensions
         services.AddScoped<ICardLinkService, CardLinkService>();
         services.AddScoped<ICardService, CardService>();
         services.AddScoped<IOfficeService, OfficeService>();
+        services.AddScoped<IAuthService, AuthService>();
     }
 }

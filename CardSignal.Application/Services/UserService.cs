@@ -34,11 +34,23 @@ public class UserService : IUserService
         throw new NotImplementedException();
     }
 
+    public async Task<UserDto> GetUserByEmail(string email)
+    {
+        var user = await _userRepository.GetUserByEmailAsync(email);
+        return _mapper.Map<UserDto>(user);
+    }
+
     public async Task<List<UserDto>> GetAllUsers()
     {
         List<User> users = await _userRepository.GetAllUsers();
         return _mapper.Map<List<UserDto>>(users);
     }
+
+    public bool VerifyPasswordHash(string password, byte[] storedHash, byte[] storedSalt)
+    {
+        return _userRepository.VerifyPasswordHash(password, storedHash, storedSalt);
+    }
+
 
     public async Task<UserDto> AddUser(UserDto userDto)
     {
