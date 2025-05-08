@@ -46,9 +46,10 @@ public class OfficeService : IOfficeService
         return _mapper.Map<OfficeDto>(office);
     }
 
-    public Task<IEnumerable<OfficeDto>> GetOffices()
+    public async Task<List<OfficeDto>> GetOffices()
     {
-        throw new NotImplementedException();
+        var offices = await _officeRepository.GetAllOfficesAsync();
+        return _mapper.Map<List<OfficeDto>>(offices);
     }
 
     public Task<OfficeDto> UpdateOffice(OfficeDto office)
@@ -56,8 +57,9 @@ public class OfficeService : IOfficeService
         throw new NotImplementedException();
     }
 
-    public void DeleteOffice(OfficeDto office)
+    public async Task DeleteOffice(string name)
     {
-        throw new NotImplementedException();
+        var office = await _officeRepository.GetOfficeAsync(name);
+        _officeRepository.DeleteOffice(office);
     }
 }

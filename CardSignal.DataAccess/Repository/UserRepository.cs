@@ -25,6 +25,11 @@ public class UserRepository : IUserRepository
 
         _context.Users.Add(user);
     }
+    
+    public void DeleteUser(User user)
+    {
+        _context.Users.Remove(user);
+    }
 
     public Task<User> AuthenticateAsync(string username, string password)
     {

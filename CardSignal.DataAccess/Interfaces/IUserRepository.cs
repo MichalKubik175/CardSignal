@@ -6,6 +6,7 @@ public interface IUserRepository
 {
     Task<List<User>> GetAllUsers();
     void AddUser(User user, string password);
+    void DeleteUser(User user);
     Task<User> AuthenticateAsync(string username, string password);
     Task<User> GetUserByIdAsync(Guid id);
     Task<User> GetUserByEmailAsync(string email);

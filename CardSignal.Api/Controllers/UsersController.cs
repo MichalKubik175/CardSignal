@@ -34,4 +34,20 @@ public class UsersController : Controller
         var users = await _userService.AddUser(userDto);
         return Ok(users);
     }
+    
+    [HttpDelete("{id:guid}")]
+    [ProducesResponseType(StatusCodes.Status204NoContent)]
+    public async Task<IActionResult> DeleteUser([FromRoute] Guid id)
+    {
+        await _userService.DeleteUser(id);
+        return NoContent();
+    }
+    
+    [HttpPut("{id:guid}")]
+    [ProducesResponseType(StatusCodes.Status204NoContent)]
+    public async Task<IActionResult> UpdateUser([FromRoute] UserDto userDto)
+    {
+        await _userService.UpdateUser(userDto);
+        return NoContent();
+    }
 }

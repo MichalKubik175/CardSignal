@@ -24,14 +24,22 @@ public class UserService : IUserService
         _dataBaseContext = dataBaseContext;
     }
     
-    public void DeleteUser(UserDto user)
+    public async Task DeleteUser(Guid id)
     {
-        throw new NotImplementedException();
+        var user = await _userRepository.GetUserByIdAsync(id);
+        
+        _userRepository.DeleteUser(user);
     }
 
-    public Task<UserDto> UpdateUser(UserDto user)
+    public async Task<UserDto> UpdateUser(UserDto userDto)
     {
-        throw new NotImplementedException();
+        var user = await _userRepository.GetUserByEmailAsync(userDto.Email);
+        
+        _mapper.Map(userDto, user);
+
+        await _dataBaseContext.SaveChangesAsync();
+        
+        return _mapper.Map<UserDto>(user);
     }
 
     public async Task<UserDto> GetUserByEmail(string email)
