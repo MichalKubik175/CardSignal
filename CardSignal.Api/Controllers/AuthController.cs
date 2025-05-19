@@ -22,5 +22,5 @@ public class AuthController : Controller
     {
         var token = await _authService.SignInAsync(authDto);
         return Ok(new { token });
-    }
+    }    
 }
