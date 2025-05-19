@@ -5,21 +5,26 @@ using CardSignal.Core.Entities;
 using CardSignal.Core.Exceptions;
 using CardSignal.DataAccess.Interfaces;
 using CardSignal.DataAccess.Repository;
+using Kirpichyov.FriendlyJwt;
+using Kirpichyov.FriendlyJwt.Contracts;
 
 namespace CardSignal.Application.Services;
 
 public class CardLinkService : ICardLinkService
 {
     private readonly ICardLinkRepository _cardLinkRepository;
+    private readonly IJwtTokenReader _jwtTokenReader;
     private readonly IMapper _mapper;
     private readonly DataBaseContext _dataBaseContext;
 
     public CardLinkService(
         ICardLinkRepository cardLinkRepository,
+        IJwtTokenReader jwtTokenReader,
         IMapper mapper,
         DataBaseContext dataBaseContext)
     {
         _cardLinkRepository = cardLinkRepository;
+        _jwtTokenReader = jwtTokenReader;
         _mapper = mapper;
         _dataBaseContext = dataBaseContext;
     }
@@ -47,7 +52,7 @@ public class CardLinkService : ICardLinkService
 
     public async Task<List<CardLinkDto>> GetCardLinks()
     {
-        List<CardLink> cardLinks = await _cardLinkRepository.GetAllCardLinksAsync();
+        List<CardLink> cardLinks = await _cardLinkRepository.GetAllCardLinksAsync(Guid.Parse(_jwtTokenReader.UserId));
         return _mapper.Map<List<CardLinkDto>>(cardLinks);
     }
 

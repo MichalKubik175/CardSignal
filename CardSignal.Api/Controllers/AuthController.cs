@@ -1,3 +1,4 @@
+using CardSignal.Application.Dto;
 using CardSignal.Application.Interfaces;
 using Microsoft.AspNetCore.Mvc;
 
@@ -17,9 +18,9 @@ public class AuthController : Controller
     
     [HttpPost]
     [ProducesResponseType(typeof(string),StatusCodes.Status200OK)]
-    public async Task<IActionResult> SignIn(string username, string password)
+    public async Task<IActionResult> SignIn([FromBody] AuthDto authDto)
     {
-        var token = await _authService.SignInAsync(username, password);
-        return Ok(token);
+        var token = await _authService.SignInAsync(authDto);
+        return Ok(new { token });
     }
 }

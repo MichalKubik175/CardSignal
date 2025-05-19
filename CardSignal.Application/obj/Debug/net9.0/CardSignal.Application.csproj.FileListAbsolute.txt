@@ -68,3 +68,39 @@ C:\Users\maXimus\Downloads\Card\CardSignal\CardSignal.Application\obj\Debug\net9
 C:\Users\maXimus\Downloads\Card\CardSignal\CardSignal.Application\obj\Debug\net9.0\refint\CardSignal.Application.dll
 C:\Users\maXimus\Downloads\Card\CardSignal\CardSignal.Application\obj\Debug\net9.0\CardSignal.Application.pdb
 C:\Users\maXimus\Downloads\Card\CardSignal\CardSignal.Application\obj\Debug\net9.0\ref\CardSignal.Application.dll
+C:\Users\maXimus\Desktop\CardSignal\CardSignal\CardSignal.Application\bin\Debug\net9.0\CardSignal.Application.deps.json
+C:\Users\maXimus\Desktop\CardSignal\CardSignal\CardSignal.Application\bin\Debug\net9.0\CardSignal.Application.dll
+C:\Users\maXimus\Desktop\CardSignal\CardSignal\CardSignal.Application\bin\Debug\net9.0\CardSignal.Application.pdb
+C:\Users\maXimus\Desktop\CardSignal\CardSignal\CardSignal.Application\bin\Debug\net9.0\CardSignal.Core.dll
+C:\Users\maXimus\Desktop\CardSignal\CardSignal\CardSignal.Application\bin\Debug\net9.0\CardSignal.DataAccess.dll
+C:\Users\maXimus\Desktop\CardSignal\CardSignal\CardSignal.Application\bin\Debug\net9.0\CardSignal.Core.pdb
+C:\Users\maXimus\Desktop\CardSignal\CardSignal\CardSignal.Application\bin\Debug\net9.0\CardSignal.DataAccess.pdb
+C:\Users\maXimus\Desktop\CardSignal\CardSignal\CardSignal.Application\obj\Debug\net9.0\CardSignal.Application.csproj.AssemblyReference.cache
+C:\Users\maXimus\Desktop\CardSignal\CardSignal\CardSignal.Application\obj\Debug\net9.0\CardSignal.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\maXimus\Desktop\CardSignal\CardSignal\CardSignal.Application\obj\Debug\net9.0\CardSignal.Application.AssemblyInfoInputs.cache
+C:\Users\maXimus\Desktop\CardSignal\CardSignal\CardSignal.Application\obj\Debug\net9.0\CardSignal.Application.AssemblyInfo.cs
+C:\Users\maXimus\Desktop\CardSignal\CardSignal\CardSignal.Application\obj\Debug\net9.0\CardSignal.Application.csproj.CoreCompileInputs.cache
+C:\Users\maXimus\Desktop\CardSignal\CardSignal\CardSignal.Application\obj\Debug\net9.0\CardSignal.Application.sourcelink.json
+C:\Users\maXimus\Desktop\CardSignal\CardSignal\CardSignal.Application\obj\Debug\net9.0\CardSign.042739DD.Up2Date
+C:\Users\maXimus\Desktop\CardSignal\CardSignal\CardSignal.Application\obj\Debug\net9.0\CardSignal.Application.dll
+C:\Users\maXimus\Desktop\CardSignal\CardSignal\CardSignal.Application\obj\Debug\net9.0\refint\CardSignal.Application.dll
+C:\Users\maXimus\Desktop\CardSignal\CardSignal\CardSignal.Application\obj\Debug\net9.0\CardSignal.Application.pdb
+C:\Users\maXimus\Desktop\CardSignal\CardSignal\CardSignal.Application\obj\Debug\net9.0\ref\CardSignal.Application.dll
+C:\Users\User\Desktop\CardSignal 18.05.2025\CardSignal\CardSignal\CardSignal.Application\bin\Debug\net9.0\CardSignal.Application.deps.json
+C:\Users\User\Desktop\CardSignal 18.05.2025\CardSignal\CardSignal\CardSignal.Application\bin\Debug\net9.0\CardSignal.Application.dll
+C:\Users\User\Desktop\CardSignal 18.05.2025\CardSignal\CardSignal\CardSignal.Application\bin\Debug\net9.0\CardSignal.Application.pdb
+C:\Users\User\Desktop\CardSignal 18.05.2025\CardSignal\CardSignal\CardSignal.Application\bin\Debug\net9.0\CardSignal.Core.dll
+C:\Users\User\Desktop\CardSignal 18.05.2025\CardSignal\CardSignal\CardSignal.Application\bin\Debug\net9.0\CardSignal.DataAccess.dll
+C:\Users\User\Desktop\CardSignal 18.05.2025\CardSignal\CardSignal\CardSignal.Application\bin\Debug\net9.0\CardSignal.Core.pdb
+C:\Users\User\Desktop\CardSignal 18.05.2025\CardSignal\CardSignal\CardSignal.Application\bin\Debug\net9.0\CardSignal.DataAccess.pdb
+C:\Users\User\Desktop\CardSignal 18.05.2025\CardSignal\CardSignal\CardSignal.Application\obj\Debug\net9.0\CardSignal.Application.csproj.AssemblyReference.cache
+C:\Users\User\Desktop\CardSignal 18.05.2025\CardSignal\CardSignal\CardSignal.Application\obj\Debug\net9.0\CardSignal.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\User\Desktop\CardSignal 18.05.2025\CardSignal\CardSignal\CardSignal.Application\obj\Debug\net9.0\CardSignal.Application.AssemblyInfoInputs.cache
+C:\Users\User\Desktop\CardSignal 18.05.2025\CardSignal\CardSignal\CardSignal.Application\obj\Debug\net9.0\CardSignal.Application.AssemblyInfo.cs
+C:\Users\User\Desktop\CardSignal 18.05.2025\CardSignal\CardSignal\CardSignal.Application\obj\Debug\net9.0\CardSignal.Application.csproj.CoreCompileInputs.cache
+C:\Users\User\Desktop\CardSignal 18.05.2025\CardSignal\CardSignal\CardSignal.Application\obj\Debug\net9.0\CardSignal.Application.sourcelink.json
+C:\Users\User\Desktop\CardSignal 18.05.2025\CardSignal\CardSignal\CardSignal.Application\obj\Debug\net9.0\CardSign.042739DD.Up2Date
+C:\Users\User\Desktop\CardSignal 18.05.2025\CardSignal\CardSignal\CardSignal.Application\obj\Debug\net9.0\CardSignal.Application.dll
+C:\Users\User\Desktop\CardSignal 18.05.2025\CardSignal\CardSignal\CardSignal.Application\obj\Debug\net9.0\refint\CardSignal.Application.dll
+C:\Users\User\Desktop\CardSignal 18.05.2025\CardSignal\CardSignal\CardSignal.Application\obj\Debug\net9.0\CardSignal.Application.pdb
+C:\Users\User\Desktop\CardSignal 18.05.2025\CardSignal\CardSignal\CardSignal.Application\obj\Debug\net9.0\ref\CardSignal.Application.dll

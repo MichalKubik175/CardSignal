@@ -5,5 +5,5 @@ namespace CardSignal.Application.Interfaces;
 
 public interface IAuthService
 {
-    Task<string> SignInAsync(string email, string password);
+    Task<string> SignInAsync(AuthDto authDto);
 }

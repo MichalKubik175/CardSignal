@@ -10,7 +10,7 @@ public interface ICardLinkRepository
 
     Task<CardLink> GetCardLinkAsync(string cardLinkName);
 
-    Task<List<CardLink>> GetAllCardLinksAsync();
+    Task<List<CardLink>> GetAllCardLinksAsync(Guid userId);
 
     void DeleteCardLink(CardLink cardLink);
 

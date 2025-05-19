@@ -37,9 +37,10 @@ public class CardLinkRepository : ICardLinkRepository
                ?? throw new CardLinkNotFoundException($"CardLink with provided {cardLinkName} name is not found!");
     }
 
-    public async Task<List<CardLink>> GetAllCardLinksAsync()
+    public async Task<List<CardLink>> GetAllCardLinksAsync(Guid userId)
     {
         return await _context.CardLinks
+            .Where(x => x.UserId == userId)
             .AsNoTracking()
             .ToListAsync();
     }

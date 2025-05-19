@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "6Rlbt8q+bI4=",
+  "dgSpecHash": "4ra5atqmiG0=",
   "success": true,
-  "projectFilePath": "C:\\Users\\User\\RiderProjects\\CardSignalR\\CardSignal.Application\\CardSignal.Application.csproj",
+  "projectFilePath": "C:\\Users\\User\\Desktop\\CardSignal 18.05.2025\\CardSignal\\CardSignal\\CardSignal.Application\\CardSignal.Application.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\User\\.nuget\\packages\\automapper\\14.0.0\\automapper.14.0.0.nupkg.sha512",
     "C:\\Users\\User\\.nuget\\packages\\kirpichyov.friendlyjwt\\1.0.8\\kirpichyov.friendlyjwt.1.0.8.nupkg.sha512",

@@ -1,4 +1,5 @@
 using AutoMapper;
+using CardSignal.Application.Dto;
 using CardSignal.Application.Interfaces;
 using CardSignal.Application.Options;
 using CardSignal.Core.Entities;
@@ -41,11 +42,11 @@ public class AuthService : IAuthService
         return generatedTokenInfo.Token;
     }
 
-    public async Task<string> SignInAsync(string email, string password)
+    public async Task<string> SignInAsync(AuthDto authDto)
     {
-        var user = await _userRepository.GetUserByEmailAsync(email);
+        var user = await _userRepository.GetUserByEmailAsync(authDto.Username);
 
-        if (!_userRepository.VerifyPasswordHash(password, user.PasswordHash, user.PasswordSalt))
+        if (!_userRepository.VerifyPasswordHash(authDto.Password, user.PasswordHash, user.PasswordSalt))
         {
             throw new AuthFailedException("Email or password is incorrect");
         }
