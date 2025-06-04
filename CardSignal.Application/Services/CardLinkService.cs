@@ -37,6 +37,7 @@ public class CardLinkService : ICardLinkService
         }
         
         var cardLink = _mapper.Map<CardLink>(cardLinkDto);
+        cardLink.UserId = Guid.Parse(_jwtTokenReader.UserId);
         _cardLinkRepository.AddCardLink(cardLink);
         
         await _dataBaseContext.SaveChangesAsync();

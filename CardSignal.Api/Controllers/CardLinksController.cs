@@ -44,9 +44,6 @@ public class CardLinksController : Controller
     [ProducesResponseType(typeof(List<CardLinkDto>),StatusCodes.Status200OK)]
     public async Task<IActionResult> AddCardLink([FromBody] CardLinkDto cardLinkDto)
     {
-        var baseUrl = $"{HttpContext.Request.Scheme}://{HttpContext.Request.Host}";
-        cardLinkDto.Link = baseUrl;
-
         var cardLink = await _cardLinkService.AddCardLink(cardLinkDto);
         return Ok(cardLink);
     }
