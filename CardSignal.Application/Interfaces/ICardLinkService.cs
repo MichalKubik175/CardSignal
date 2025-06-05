@@ -5,7 +5,9 @@ namespace CardSignal.Application.Interfaces;
 public interface ICardLinkService
 {
     public Task<CardLinkDto> AddCardLink(CardLinkDto cardLinkDto);
-    public Task<CardLinkDto> GetCardLink(string cardLinkName);
+    public Task<CardLinkDto> GetCardLinkByName(string cardLinkName);
+    
+    public Task<CardLinkDto> GetCardLinkById(Guid cardLinkId);
     
     public Task<List<CardLinkDto>> GetCardLinks();
     

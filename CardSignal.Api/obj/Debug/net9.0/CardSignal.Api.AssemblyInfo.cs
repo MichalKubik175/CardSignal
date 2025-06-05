@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("CardSignal.Api")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+eeb747a9fdd69711cc6c022bcd7b0c23abd49a58")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b62f621a7ff2612d5f3c9f1929f9bbb8970aab14")]
 [assembly: System.Reflection.AssemblyProductAttribute("CardSignal.Api")]
 [assembly: System.Reflection.AssemblyTitleAttribute("CardSignal.Api")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

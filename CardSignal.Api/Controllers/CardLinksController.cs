@@ -34,9 +34,17 @@ public class CardLinksController : Controller
     
     [HttpGet("{name}")]
     [ProducesResponseType(typeof(List<CardLinkDto>),StatusCodes.Status200OK)]
-    public async Task<IActionResult> GetCardLink([FromRoute] string name)
+    public async Task<IActionResult> GetCardLinkByName([FromRoute] string name)
     {
-        var cardLink = await _cardLinkService.GetCardLink(name);
+        var cardLink = await _cardLinkService.GetCardLinkByName(name);
+        return Ok(cardLink);
+    }
+    
+    [HttpGet("{id}")]
+    [ProducesResponseType(typeof(List<CardLinkDto>),StatusCodes.Status200OK)]
+    public async Task<IActionResult> GetCardLinkById([FromRoute] Guid id)
+    {
+        var cardLink = await _cardLinkService.GetCardLinkById(id);
         return Ok(cardLink);
     }
     

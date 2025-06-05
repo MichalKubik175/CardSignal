@@ -45,9 +45,15 @@ public class CardLinkService : ICardLinkService
         return _mapper.Map<CardLinkDto>(cardLink);
     }
 
-    public async Task<CardLinkDto> GetCardLink(string cardLinkName)
+    public async Task<CardLinkDto> GetCardLinkByName(string cardLinkName)
     {
         var cardLink = await _cardLinkRepository.GetCardLinkAsync(cardLinkName);
+        return _mapper.Map<CardLinkDto>(cardLink);
+    }
+
+    public async Task<CardLinkDto> GetCardLinkById(Guid cardLinkId)
+    {
+        CardLink cardLink = await _cardLinkRepository.GetCardLinkByIdAsync(cardLinkId, false);
         return _mapper.Map<CardLinkDto>(cardLink);
     }
 
