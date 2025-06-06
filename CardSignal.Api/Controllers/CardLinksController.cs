@@ -40,7 +40,7 @@ public class CardLinksController : Controller
         return Ok(cardLink);
     }
     
-    [HttpGet("{id}")]
+    [HttpGet("{id:guid}")]
     [ProducesResponseType(typeof(List<CardLinkDto>),StatusCodes.Status200OK)]
     public async Task<IActionResult> GetCardLinkById([FromRoute] Guid id)
     {
