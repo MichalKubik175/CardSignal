@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("CardSignal.DataAccess")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ec8aabc6d214b27c2e78f9e41e1a3ca16f7d8d60")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0c0a831d995b3aa0b4fc0b2e7dcc62dbc575defc")]
 [assembly: System.Reflection.AssemblyProductAttribute("CardSignal.DataAccess")]
 [assembly: System.Reflection.AssemblyTitleAttribute("CardSignal.DataAccess")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

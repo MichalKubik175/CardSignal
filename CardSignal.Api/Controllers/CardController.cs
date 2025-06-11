@@ -26,6 +26,14 @@ public class CardController : Controller
         return Ok(cards);
     }
     
+    [HttpGet("/api/cards/card-link/{cardLinkId:guid}")]
+    [ProducesResponseType(typeof(List<CardDto>),StatusCodes.Status200OK)]
+    public async Task<IActionResult> GetAllByCardLinkId(Guid cardLinkId)
+    {
+        var cards = await _cardService.GetAllCardsByCardLinkId(cardLinkId);
+        return Ok(cards);
+    }
+    
     [HttpPost]
     [ProducesResponseType(typeof(List<CardDto>),StatusCodes.Status200OK)]
     public async Task<IActionResult> AddCard(CardDto cardDto)
